@@ -16,7 +16,10 @@
     "secrets:scan": "gitleaks detect --source . --redact --config .gitleaks.toml",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate": "tsx scripts/validate-rdf.ts"
+    "validate": "tsx scripts/validate-rdf.ts",
+    "preview:ontology:list": "tsx scripts/list-changed-catalogue-entries.ts",
+    "preview:ontology:render": "tsx scripts/render-ontology-previews.ts",
+    "preview:ontology:prepare": "tsx scripts/prepare-ontology-preview-assets.ts"
   },
   "dependencies": {
     "@types/cytoscape": "^3.21.9",
@@ -32,6 +35,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.60.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
