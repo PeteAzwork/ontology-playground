@@ -91,7 +91,7 @@ describe('catalogue compilation (end-to-end)', () => {
 
 describe('catalogue metadata validation', () => {
   it('all entries reference valid categories', () => {
-    const validCats = ['retail', 'healthcare', 'finance', 'manufacturing', 'education', 'general', 'food', 'media', 'events', 'iq-lab', 'school', 'fibo'];
+    const validCats = ['retail', 'healthcare', 'finance', 'manufacturing', 'education', 'general', 'food', 'media', 'events', 'technology', 'iq-lab', 'school', 'fibo'];
     for (const entry of readCatalogue().entries) {
       expect(validCats).toContain(entry.category);
     }

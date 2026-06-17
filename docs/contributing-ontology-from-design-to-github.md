@@ -106,7 +106,7 @@ Required fields are `name`, `description`, and `category`. The catalogue ID is d
 Supported categories are:
 
 ```text
-retail, healthcare, finance, manufacturing, education, food, media, events, general, school, fibo
+retail, healthcare, finance, manufacturing, education, food, media, events, technology, general, school, fibo
 ```
 
 ---
